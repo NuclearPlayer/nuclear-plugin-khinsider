@@ -1,0 +1,43 @@
+{
+  "name": "nuclear-plugin-khinsider",
+  "version": "0.1.0",
+  "description": "KHInsider metadata and streaming provider for Nuclear",
+  "author": "nukeop",
+  "license": "AGPL-3.0-only",
+  "main": "src/index.ts",
+  "type": "module",
+  "nuclear": {
+    "displayName": "KHInsider",
+    "category": "metadata",
+    "permissions": []
+  },
+  "keywords": [
+    "nuclear",
+    "plugin",
+    "khinsider",
+    "vgm",
+    "game-soundtracks",
+    "metadata",
+    "streaming"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NuclearPlayer/nuclear-plugin-khinsider.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NuclearPlayer/nuclear-plugin-khinsider/issues"
+  },
+  "scripts": {
+    "lint": "eslint 'src/**/*.ts' eslint.config.ts",
+    "lint:fix": "eslint 'src/**/*.ts' eslint.config.ts --fix",
+    "format": "prettier --write 'src/**/*.ts'",
+    "format:check": "prettier --check 'src/**/*.ts'"
+  },
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "dependencies": {
+    "@nuclearplayer/plugin-sdk": "^2.7.0"
+  }
+}
