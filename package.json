@@ -38,6 +38,6 @@
     "README.md"
   ],
   "dependencies": {
-    "@nuclearplayer/plugin-sdk": "^2.7.0"
+    "@nuclearplayer/plugin-sdk": "^2.8.0"
   }
 }
