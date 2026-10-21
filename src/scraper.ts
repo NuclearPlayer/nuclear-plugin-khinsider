@@ -1,4 +1,4 @@
-import { BASE_URL } from './config';
+import { BASE_URL, USER_AGENT } from './config';
 import type {
   FetchFn,
   KhinsiderAlbumDetail,
@@ -11,7 +11,9 @@ const fetchHtml = async (
   fetchFn: FetchFn,
   url: string,
 ): Promise<Document> => {
-  const response = await fetchFn(url);
+  const response = await fetchFn(url, {
+    headers: { 'User-Agent': USER_AGENT },
+  });
   if (!response.ok) {
     throw new Error(`KHInsider returned ${response.status} for ${url}`);
   }

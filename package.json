@@ -9,6 +9,7 @@
   "nuclear": {
     "displayName": "KHInsider",
     "category": "metadata",
+    "categories": ["metadata", "streaming"],
     "permissions": []
   },
   "keywords": [
